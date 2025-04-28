@@ -1,8 +1,7 @@
 #!/bin/bash
 
-input_dir = "$1"
-output_dir = "$2"
+max_depth=-1
+input_dir=""
+output_dir=""
 
-
-mkdir -p "$output_dir"
-cp "$input_dir"/* "$output_dir"/ 2>/dev/null
+process_directory "$input_dir" 0 "$output_dir"
